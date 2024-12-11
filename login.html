@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login | Puddle</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <nav class="nav-container">
+            <div>
+                <ul class="nav-links">
+                    <li><a href="base.html" class="puddle-browse">Puddle</a></li>
+                    <li><a href="cart.html" class="cart-link">Cart</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="base.html" class="puddle-browse browse">Browse</a></li>
+                    <li><a href="signup.html" class="signup-login">Sign up</a></li>
+                    <li><a href="login.html" class="signup-login ">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="free-area">
+            <div class="login-container">
+                <h1>Login</h1>
+
+                <form method="post" action="base.html">
+                    <div>
+                        <label for="username">Username</label><br>
+                        <input type="text" id="username" name="username" placeholder="Enter your username" class="user-password" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="password">Password</label><br>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" class="user-password" required>
+                    </div>
+                    <br>
+                    <div class="reme-forget">
+                        <label for="remember-me">
+                            <input type="checkbox" name="remember-me" id="remember-me">
+                            Remember me
+                        </label>
+                        <a href="reset_password.html">Forgot Password?</a>
+                    </div>
+                    <br><br>
+                    <button type="submit" class="signup-login">
+                        Login
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div>
+                <p>Puddle E-Commerce Web App</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="/about" class="about-link">About</a></li>
+                    <li><a href="/contact" class="contact-link">Contact</a></li>
+                    <li><a href="/privacy" class="privacy-policy-link">Privacy policy</a></li>
+                    <li><a href="/terms_of_use" class="terms-of-use-link">Terms of use</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
