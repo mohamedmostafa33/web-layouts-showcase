@@ -5,10 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cart | Puddle</title>
         <link rel="stylesheet" href="static/css/style.css">
+        <script src="static/js/script.js"></script>
     </head>
 
     <body>
-
         <nav class="nav-container">
             <div>
                 <ul class="nav-links">
@@ -26,40 +26,9 @@
         </nav>
         <div id="car-container">
             <h1>Your Cart</h1>
-
-            <div id="cart-items">
-                <div class="cart-item">
-                    <img src="static/media/chair1_muMjYRp.jpg" alt="Comfortable Chair 1" width="200">
-                    <div>
-                        <h3>Chair 1</h3>
-                        <p>Price: $49.99</p>
-                        <p>Quantity: 1</p>
-                    </div>
-                    <button>Remove from Cart</button>
-                </div><br>
-                <div class="cart-item">
-                    <img src="static/media/toy-car_UhP7Pma.jpg" alt="Toy 1" width="200">
-                    <div>
-                        <h3>Toy 1</h3>
-                        <p>Price: $19.99</p>
-                        <p>Quantity: 2</p>
-                    </div>
-                    <button>Remove from Cart</button>
-                </div><br>
-                
-                <div class="cart-item">
-                    <img src="static/media/shoes2.jpg" alt="Stylish Shoes" width="200">
-                    <div>
-                        <h3>Stylish Shoes</h3>
-                        <p>Price: $79.99</p>
-                        <p>Quantity: 1</p>
-                    </div>
-                    <button>Remove from Cart</button>
-                </div><br>
-            </div>
-
+            <div id="cart-items"></div> <!-- Cart items will be dynamically injected here -->
             <div id="cart-total">
-                <h3>Total Price: $149.97</h3>
+                <h3>Total Price: $0.00</h3> <!-- Total Price will be dynamically updated here -->
                 <button>Proceed to Checkout</button>
             </div>
         </div>
@@ -78,6 +47,5 @@
                 </ul>
             </div>
         </footer>
-
     </body>
 </html>
