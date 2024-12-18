@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login | Puddle</title>
+        <title>Sign up | Puddle</title>
         <link rel="stylesheet" href="static/css/main.css">
+        <link rel="stylesheet" href="static/css/style.css">
     </head>
 
     <body>
@@ -26,31 +27,42 @@
         </nav>
 
         <div class="free-area">
-            <div class="login-container">
-                <h1>Login</h1>
+            <div class="signup-container">
+                <h1>Sign up</h1>
 
-                <form method="post" action="base.html">
+                <form method="post" action="login.html">
                     <div>
                         <label for="username">Username</label><br>
                         <input type="text" id="username" name="username" placeholder="Enter your username" class="user-password" required>
                     </div>
                     <br>
                     <div>
-                        <label for="password">Password</label><br>
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email" placeholder="Enter your Email" class="user-password" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="password1">Password</label><br>
                         <input type="password" id="password" name="password" placeholder="Enter your password" class="user-password" required>
                     </div>
                     <br>
-                    <div class="reme-forget">
-                        <label for="remember-me">
-                            <input type="checkbox" name="remember-me" id="remember-me">
-                            Remember me
-                        </label>
-                        <a href="reset_password.html">Forgot Password?</a>
+                    <div>
+                        <label for="password2">Confirm Password</label><br>
+                        <input type="password" id="password" name="password" placeholder="Confirm your password" class="user-password" required>
                     </div>
-                    <br><br>
-                    <button type="submit" class="signup-login">
-                        Login
+                    <br>
+                    <label for="check1" class="check-label">
+                        <input type="checkbox" id="check1" class="check"> I agree to Puddle Terms of Service and Privacy Policy.
+                    </label>
+                    <label for="check2" class="check-label">
+                        <input type="checkbox" id="check2" class="check"> Send me news, events and offers via periodic email.
+                    </label>
+                    <button class="signup-login signup-button">
+                        Sign up
                     </button>
+                    <div class="pm01">
+                        <p>Have an account? <a href="login.html">Login now</a></p>
+                    </div>
                 </form>
             </div>
         </div>
