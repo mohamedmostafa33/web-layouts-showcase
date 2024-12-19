@@ -6,21 +6,16 @@ body{
     padding: 3px;
     display: flex;
     align-items: center;
-    font-size: 13px;
-    color: rgb(102, 101, 101);
+    font-size: 12px;
+    color: rgb(95, 94, 94);
 }
 
 .check{
-    margin-right: 10px;
-    border: 1px solid rgb(115, 114, 114);
-    background-color: rgb(255, 255, 255); 
-    border-radius: 4px;
-    width: 13px;
-    height: 13px;
-}
-
-.check:checked{
-    background-color: #14b8a6;
+    margin: 0;
+    margin-right: 7px;
+    accent-color: #14b8a6;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
 .signup-button{
@@ -35,6 +30,11 @@ body{
     justify-content: center;
 }
 
+.pm01 p{
+    font-size: 15px;
+    padding: 10px;
+}
+
 .pm01 a{
     text-decoration: underline;
     color: #14b8a6;
@@ -43,3 +43,83 @@ body{
 .pm01 a:hover{
     color: #0f766e;
 }
+
+.main-con{
+    display: flex;
+}
+
+.side-con{
+    width: 20%;
+    padding: 10px;
+    background-color: #f3f4f6;
+    margin: 20px;
+    margin-right: 0;
+    border-radius: 10px;
+}
+
+.side-con input{
+    padding: 15px;
+    border: 1px solid rgb(198, 198, 198);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+}
+
+.side-con input::placeholder{
+    color: rgb(152, 152, 152);
+    font-size: 12px;
+    background-color: #ffffff;
+}
+
+.side-search, .side-nav, .clear-con{
+    margin-bottom: 35px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.side-nav p, .clear-con p{
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.side-nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.side-nav ul li{
+    padding-top: 7px;
+}
+
+.side-nav a{
+    color: rgb(101, 99, 99);
+}
+
+.side-nav a:hover{
+    color: black;
+}
+
+.side-con button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    font-weight:400;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.search-btn{
+    background-color: #14b8a6;
+}
+
+.clear-btn{
+    margin-top: 10px;
+    background-color: #f8ab26;
+}
+
+

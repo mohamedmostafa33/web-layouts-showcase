@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-family: system-ui;
 }
 
 a{
@@ -24,7 +25,6 @@ a{
 .puddle-browse{
     font-size: 20px;
     color: black;
-    font-family: system-ui;
     font-weight: 600;
 }
 
@@ -43,7 +43,6 @@ a{
     color: rgb(255, 255, 255);
     font-weight: 600;
     font-size: 18px;
-    font-family: system-ui;
     margin-left: 30px;
 }
 
@@ -58,7 +57,6 @@ a{
     color: rgb(255, 255, 255);
     font-weight: 600;
     font-size: 18px;
-    font-family: system-ui;
     margin-left: 30px;
 }
 
@@ -86,7 +84,6 @@ a{
 
 .login-container h1, .signup-container h1{
     font-size: 30px;
-    font-family: system-ui;
     font-weight: 400;
     margin: 0;
     padding-bottom: 20px;
@@ -94,7 +91,6 @@ a{
 
 .login-container label{
     font-size: 15px;
-    font-family: system-ui;
 }
 
 .user-password{
@@ -108,22 +104,22 @@ a{
 }
 
 .user-password::placeholder{
-    padding-left: 15px;
-    color: #9a9ea3;
-    font-family: system-ui;
     font-size: 15px;
 }
 
 .login-container button{
     margin: 0;
     padding: 12px;
-    border: #0f766e;
+    border: none;
     width: 100%;
+}
+
+#remember-me{
+    accent-color: #14b8a6;
 }
 
 .login-container a{
     text-decoration: underline;
-    font-family: system-ui;
     font-size: 15px;
     color: #14b8a6;
 }
@@ -149,13 +145,11 @@ a{
 #footer p{
     color: #989ca4;
     font-size: 20px;
-    font-family: system-ui;
 }
 
 #footer h3{
     color: #989ca4;
     font-size: 18px;
-    font-family: system-ui;
 }
 
 .footer-links ul{
@@ -165,7 +159,6 @@ a{
 
 .footer-links a{ 
     color: #14b8a6;
-    font-family: system-ui; 
 }
 
 .footer-links a:hover{
@@ -177,36 +170,9 @@ a{
 }
 
 /* ---base.html style--- */
-.header{
-    font-family: system-ui; 
-    font-weight: 400;
-    margin: 20px;
+.items-p{
     text-align: center;
-}
-
-#cat-links{
-    margin: 20px;
-    background-color: #f3f4f6;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-#cat-links ul{
-   list-style: none;
-   justify-content: space-around;
-   display: flex;
-   padding: 0;
-}
-
-#cat-links a{
     font-size: 20px;
-    color: black;
-    font-family: system-ui;
-    font-weight: 400;
-}
-
-#cat-links a:hover{
-    color: #696e6d;
 }
 
 #items-container{
@@ -220,18 +186,16 @@ a{
     background-color: #ffffff;
     margin: 10px;
     border-radius: 15px;
+    width: 100%;
+    height: 100%;
 }
-
-.image {
-    display: flex;
-    justify-content: center;
-}
-
 
 .img-details{
-    background-color: rgb(255, 255, 255);
     padding: 10px;
-    border-radius: 15px;
+}
+
+.img-det{
+    font-size: 14px;
 }
 
 .item img{
@@ -247,13 +211,8 @@ a{
 }
 
 h3{
-    font-family: system-ui;
     font-size: 20px;
     font-weight: 400;
-}
-
-#items-container p{
-    font-family: system-ui;
 }
 
 #items-container button{
@@ -264,7 +223,7 @@ h3{
     color: rgb(255, 255, 255);
     font-weight: 600;
     font-size: 13px;
-    font-family: system-ui;
+    cursor: pointer;
 }
 
 #items-container button:hover{
@@ -279,7 +238,6 @@ h3{
 }
 
 #car-container h1{
-    font-family: system-ui;
     font-size: 25px;
     font-weight: 400;
     padding: 20px;
@@ -303,13 +261,11 @@ h3{
 }
 
 .cart-item h3, .cart-item p{
-    font-family: system-ui;
     margin: 3px;
 }
 
 .cart-item button, #cart-total button{
     margin-left: auto;
-    font-family: system-ui;
     font-weight: 600;
     font-size: 13px;
     color: white;
