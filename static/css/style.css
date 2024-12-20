@@ -122,4 +122,91 @@ body{
     background-color: #f8ab26;
 }
 
+.list-price{
+    color: rgb(215, 48, 48);
+    text-decoration: line-through;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 7px;
+}
 
+.price{
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.item-con{
+    display: flex;
+    padding: 20px;
+}
+
+.item-imag{
+    padding: 15px;
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    width: 80%;
+    height: 600px;
+}
+
+.item-imag img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.item-data{
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    padding: 15px;
+    margin-left: 20px;
+}
+.item-data h3{
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.D-P{
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;;
+}
+
+.order-btn{
+    background-color: #3B82F6;
+    border: none;
+    padding: 20px 30px 20px 30px;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.order-btn:hover{
+    background-color: #1D4ED8;
+}
+
+.pm02{
+    margin-top: 70px;
+    margin-bottom: 0;
+    color: #dc2626;;
+    font-weight: 600;
+}
+
+.item-data label{
+    display: block; 
+    margin-top: 10px;
+}
+
+#color-select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    width: 27%;
+    margin-top: 10px;
+}

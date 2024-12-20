@@ -178,7 +178,7 @@ a{
 #items-container{
     background-color: #f3f4f6;
     margin: 20px;
-    padding: 20px;
+    padding: 7px;
     border-radius: 10px;
 }
 
@@ -195,7 +195,7 @@ a{
 }
 
 .img-det{
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .item img{
@@ -217,8 +217,8 @@ h3{
 
 #items-container button{
     background-color: #3B82F6;
-    border: #3B82F6;
-    padding: 8px 8px;
+    border: none;
+    padding: 8px;
     border-radius: 8px;
     color: rgb(255, 255, 255);
     font-weight: 600;

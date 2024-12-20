@@ -3,12 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cart | Puddle</title>
+        <title>Item | Puddle</title>
         <link rel="stylesheet" href="static/css/main.css">
-        <script src="static/js/script.js"></script>
+        <link rel="stylesheet" href="static/css/style.css">
     </head>
 
     <body>
+
         <nav class="nav-container">
             <div>
                 <ul class="nav-links">
@@ -24,14 +25,28 @@
                 </ul>
             </div>
         </nav>
-        <div id="car-container">
-            <h1>Your Cart</h1>
-            <div id="cart-items"></div> 
-            <div id="cart-total">
-                <h3>Total Price: $0.00</h3> 
-                <button>Proceed to Checkout</button>
+
+        <div class="item-con">
+            <div class="item-imag">
+                <img src="static/media/shoes-1.jpg" alt="chair01">
+            </div>
+
+            <div class="item-data">
+                <h3>Modern Chair</h3>
+                <p><span class="D-P">Description: </span>A comfortable, ergonomic chair for long hours of sitting.</p>
+                <p><span class="D-P">Price: </span>$49</p>
+                <p class="pm02">Only 2 left in stock - order soon.</p>
+                <label for="color-select">Choose a color</label>
+                <select id="color-select" name="colors">
+                    <option value="white">White</option>
+                    <option value="gray">Gray</option>
+                    <option value="black">Black</option>
+                    <option value="red">Red</option>
+                </select>
+                <button class="add-to-cart-button order-btn">Order Now</button>
             </div>
         </div>
+
         <footer id="footer">
             <div>
                 <p>Puddle E-Commerce Web App</p>
