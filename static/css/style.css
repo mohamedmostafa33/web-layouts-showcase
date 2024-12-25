@@ -49,6 +49,7 @@ body{
 }
 
 .side-con{
+    border: 1px solid rgb(234, 234, 234);
     width: 20%;
     padding: 10px;
     background-color: #f3f4f6;
@@ -74,7 +75,7 @@ body{
 .side-search, .side-nav, .clear-con{
     margin-bottom: 35px;
     background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(239, 239, 239);
+    border: 1px solid rgb(234, 234, 234);
     border-radius: 10px;
     padding: 10px;
 }
@@ -141,6 +142,7 @@ body{
 }
 
 .item-imag{
+    border: 1px solid rgb(234, 234, 234);
     padding: 15px;
     background-color: #f3f4f6;
     border-radius: 10px;
@@ -155,6 +157,7 @@ body{
 }
 
 .item-data{
+    border: 1px solid rgb(234, 234, 234);
     background-color: #f3f4f6;
     border-radius: 10px;
     padding: 15px;
@@ -181,12 +184,20 @@ body{
     font-weight: 600;
     font-size: 15px;
     cursor: pointer;
-    width: 100%;
+    width: 48%;
     margin-top: 30px;
 }
 
 .order-btn:hover{
     background-color: #1D4ED8;
+}
+
+.contact-btn{
+    background-color:#14b8a6;
+}
+
+.contact-btn:hover{
+    background-color: #0f766e;
 }
 
 .pm02{
@@ -209,4 +220,9 @@ body{
     background-color: #f9f9f9;
     width: 27%;
     margin-top: 10px;
+}
+
+.btn-con{
+    display: flex;
+    justify-content: space-around;
 }

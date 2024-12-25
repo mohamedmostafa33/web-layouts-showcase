@@ -6,7 +6,7 @@
         <title>Browse | Puddle</title>
         <link rel="stylesheet" href="static/css/main.css">
         <link rel="stylesheet" href="static/css/style.css">
-        <script src="static/js/script.js" defer></script>
+        <script src="static/js/script.js"></script>
     </head>
 
     <body>
@@ -30,8 +30,8 @@
             <div class="side-con">
                 <div class="side-search">
                     <form action="" method="get">
-                        <input type="text" name="query" placeholder="Search a Toy, Chair or Shoes....">
-                        <button class="search-btn" type="submit">Search</button>
+                        <input id="searchBar" type="text" name="query" placeholder="Search a Toy, Chair or Shoes....">
+                        <button class="search-btn" type="button">Search</button>
                     </form>
                 </div>
 
@@ -55,8 +55,9 @@
 
                 <section id="chairs">
                     <div class="item">
-                        <a href="item.html">
-                            <img src="static/media/chair-1.jpg" alt="Comfortable Chair 1">
+                        <a href="item.html" class="item-link" 
+                           onclick="storeItemData('Modern Chair', 'A comfortable, ergonomic chair for long hours of sitting.', '$49', 'static/media/chair-1.jpg')">
+                           <img src="static/media/chair-1.jpg" alt="Comfortable Chair 1">
                         </a>
                         <div class="img-details">
                             <h3>Modern Chair</h3>
@@ -65,10 +66,11 @@
                             <button class="add-to-cart-button">Add to Cart</button>
                         </div>
                     </div>
-                
+
                     <div class="item">
-                        <a href="#">
-                            <img src="static/media/chair-2.jpg" alt="Comfortable Chair 2">
+                        <a href="item.html" class="item-link" 
+                           onclick="storeItemData('Office Chair', 'Stylish chair with adjustable height and lumbar support.', '$59.99', 'static/media/chair-2.jpg')">
+                           <img src="static/media/chair-2.jpg" alt="Comfortable Chair 2">
                         </a>
                         <div class="img-details">
                             <h3>Office Chair</h3>
@@ -77,10 +79,11 @@
                             <button class="add-to-cart-button">Add to Cart</button>
                         </div>
                     </div>
-                
+
                     <div class="item">
-                        <a href="#">
-                            <img src="static/media/chair-3.jpg" alt="Comfortable Chair 3">
+                        <a href="item.html" class="item-link" 
+                           onclick="storeItemData('Class Chair', 'A modern chair with premium cushioning and a sleek design.', '$69.99', 'static/media/chair-3.jpg')">
+                           <img src="static/media/chair-3.jpg" alt="Comfortable Chair 3">
                         </a>
                         <div class="img-details">
                             <h3>Class Chair</h3>
@@ -90,11 +93,12 @@
                         </div>
                     </div>
                 </section>
-                
+
                 <section id="toys">
                     <div class="item">
-                        <a href="#">
-                            <img src="static/media/toy-1.jpg" alt="Toy 1">
+                        <a href="item.html" class="item-link" 
+                           onclick="storeItemData('Bear Toy', 'A soft and cuddly teddy bear, perfect for kids and collectors alike.', '$19.99', 'static/media/toy-1.jpg')">
+                           <img src="static/media/toy-1.jpg" alt="Toy 1">
                         </a>
                         <div class="img-details">
                             <h3>Bear Toy</h3>
@@ -103,10 +107,11 @@
                             <button class="add-to-cart-button">Add to Cart</button>
                         </div>
                     </div>
-                
+
                     <div class="item">
-                        <a href="#">
-                            <img src="static/media/toy-2.jpg" alt="Toy 2">
+                        <a href="item.html" class="item-link" 
+                           onclick="storeItemData('Truck Toy', 'A fun and educational toy for kids aged 3-5 years old.', '$24.99', 'static/media/toy-2.jpg')">
+                           <img src="static/media/toy-2.jpg" alt="Toy 2">
                         </a>
                         <div class="img-details">
                             <h3>Truck Toy</h3>
@@ -115,10 +120,11 @@
                             <button class="add-to-cart-button">Add to Cart</button>
                         </div>
                     </div>
-                
+
                     <div class="item">
-                        <a href="#">
-                            <img src="static/media/toy-3.jpg" alt="Toy 3">
+                        <a href="item.html" class="item-link" 
+                           onclick="storeItemData('Car Toy', 'A soft plush toy perfect for cuddling and playtime.', '$25.99', 'static/media/toy-3.jpg')">
+                           <img src="static/media/toy-3.jpg" alt="Toy 3">
                         </a>
                         <div class="img-details">
                             <h3>Car Toy</h3>
@@ -128,11 +134,12 @@
                         </div>
                     </div>
                 </section>
-                
+
                 <section id="shoes">
                     <div class="item">
-                        <a href="#">
-                            <img src="static/media/shoes-1.jpg" alt="Stylish Shoes">
+                        <a href="item.html" class="item-link" 
+                           onclick="storeItemData('Safety Shoes', 'Trendy shoes made with high-quality materials for comfort and style.', '$79.99', 'static/media/shoes-1.jpg')">
+                           <img src="static/media/shoes-1.jpg" alt="Stylish Shoes">
                         </a>
                         <div class="img-details">
                             <h3>Safety Shoes</h3>
@@ -141,10 +148,11 @@
                             <button class="add-to-cart-button">Add to Cart</button>
                         </div>
                     </div>
-                
+
                     <div class="item">
-                        <a href="#">
-                            <img src="static/media/shoes-2.jpg" alt="Running Shoes">
+                        <a href="item.html" class="item-link" 
+                           onclick="storeItemData('Formal Shoes', 'Lightweight and durable running shoes for everyday workouts.', '$89.99', 'static/media/shoes-2.jpg')">
+                           <img src="static/media/shoes-2.jpg" alt="Running Shoes">
                         </a>
                         <div class="img-details">
                             <h3>Formal Shoes</h3>
@@ -153,10 +161,11 @@
                             <button class="add-to-cart-button">Add to Cart</button>
                         </div>
                     </div>
-                
+
                     <div class="item">
-                        <a href="#">
-                            <img src="static/media/shoes-3.jpg" alt="Formal Shoes">
+                        <a href="item.html" class="item-link" 
+                           onclick="storeItemData('Running Shoes', 'Elegant and professional formal shoes for office and events.', '$99.99', 'static/media/shoes-3.jpg')">
+                           <img src="static/media/shoes-3.jpg" alt="Formal Shoes">
                         </a>
                         <div class="img-details">
                             <h3>Running Shoes</h3>
@@ -186,6 +195,5 @@
             </div>
         </footer>
 
-        <script src="static/js/script.js"></script>
     </body>
 </html>

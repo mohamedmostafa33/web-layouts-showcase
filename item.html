@@ -6,10 +6,10 @@
         <title>Item | Puddle</title>
         <link rel="stylesheet" href="static/css/main.css">
         <link rel="stylesheet" href="static/css/style.css">
+        <script src="static/js/script.js"></script>
     </head>
 
     <body>
-
         <nav class="nav-container">
             <div>
                 <ul class="nav-links">
@@ -21,20 +21,20 @@
                 <ul class="nav-links">
                     <li><a href="base.html" class="puddle-browse browse">Browse</a></li>
                     <li><a href="signup.html" class="signup-login">Sign up</a></li>
-                    <li><a href="login.html" class="signup-login ">Login</a></li>
+                    <li><a href="login.html" class="signup-login">Login</a></li>
                 </ul>
             </div>
         </nav>
 
         <div class="item-con">
             <div class="item-imag">
-                <img src="static/media/shoes-1.jpg" alt="chair01">
+                <img id="item-image" alt="Item Image">
             </div>
 
             <div class="item-data">
-                <h3>Modern Chair</h3>
-                <p><span class="D-P">Description: </span>A comfortable, ergonomic chair for long hours of sitting.</p>
-                <p><span class="D-P">Price: </span>$49</p>
+                <h3 id="item-name"></h3>
+                <p><span class="D-P">Description: </span><span id="item-description"></span></p>
+                <p><span class="D-P">Price: </span><span id="item-price"></span></p>
                 <p class="pm02">Only 2 left in stock - order soon.</p>
                 <label for="color-select">Choose a color</label>
                 <select id="color-select" name="colors">
@@ -43,7 +43,10 @@
                     <option value="black">Black</option>
                     <option value="red">Red</option>
                 </select>
-                <button class="add-to-cart-button order-btn">Order Now</button>
+                <div class="btn-con">
+                    <button class="add-to-cart-button order-btn">Order Now</button>
+                    <button class="order-btn contact-btn">Contact Seller</button>
+                </div>
             </div>
         </div>
 
@@ -51,7 +54,6 @@
             <div>
                 <p>Puddle E-Commerce Web App</p>
             </div>
-
             <div class="footer-links">
                 <h3>Menu</h3>
                 <ul>
@@ -62,5 +64,9 @@
                 </ul>
             </div>
         </footer>
+
+        <script>
+            
+        </script>
     </body>
 </html>

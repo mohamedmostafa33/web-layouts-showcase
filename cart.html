@@ -20,32 +20,23 @@
                 <ul class="nav-links">
                     <li><a href="base.html" class="puddle-browse browse">Browse</a></li>
                     <li><a href="signup.html" class="signup-login">Sign up</a></li>
-                    <li><a href="login.html" class="signup-login ">Login</a></li>
+                    <li><a href="login.html" class="signup-login">Login</a></li>
                 </ul>
             </div>
         </nav>
+
         <div id="car-container">
             <h1>Your Cart</h1>
-            <div id="cart-items"></div> 
-            <div id="cart-total">
-                <h3>Total Price: $0.00</h3> 
-                <button>Proceed to Checkout</button>
-            </div>
-        </div>
-        <footer id="footer">
-            <div>
-                <p>Puddle E-Commerce Web App</p>
+
+            <div id="cart-items">
+                <!-- Cart items will be dynamically inserted here -->
             </div>
 
-            <div class="footer-links">
-                <h3>Menu</h3>
-                <ul>
-                    <li><a href="/about" class="about-link">About</a></li>
-                    <li><a href="/contact" class="contact-link">Contact</a></li>
-                    <li><a href="/privacy" class="privacy-policy-link">Privacy policy</a></li>
-                    <li><a href="/terms_of_use" class="terms-of-use-link">Terms of use</a></li>
-                </ul>
+            <div id="cart-total">
+                <h3>Total Price: $0.00</h3>
+                <button id="checkout-btn">Proceed to Checkout</button>
             </div>
-        </footer>
+        </div>
+
     </body>
 </html>
